@@ -3,8 +3,8 @@ kind: Pod
 metadata: 
   name: ey-cart-pod
   namespace: chandana-ns
-labels:
-  app: ey-cart-app
+  labels:
+    app: ey-cart-app
 spec: 
   containers:
     - name: ey-cart-container
