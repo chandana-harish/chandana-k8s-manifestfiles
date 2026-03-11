@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: flower-container-new
-          images: thanusri22/flower:v1.1.0
+          image: thanusri22/flower:v1.1.0
           ports:
             - containerPort: 3015
 
