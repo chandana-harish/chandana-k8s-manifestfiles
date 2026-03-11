@@ -1,0 +1,23 @@
+appVersion: apps/v1
+kind: flower-app-new
+metadata: 
+  name: flower-app
+  namespace: chandana-ns
+  labels:
+    app-new: flower-app-1
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app-new: flower
+  template:
+  metadata:
+    labels:
+      app-new: flower 
+    spec:
+      containers:
+        - name: flower-container-new
+          images: thanusri22/flower:v1.1.0
+          ports:
+            containerports: 3015
+
