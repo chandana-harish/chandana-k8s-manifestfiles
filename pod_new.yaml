@@ -1,10 +1,10 @@
 appVersion: v1
 kind: Pod
 metadata: 
-  - name: flower-pod
-    namespace: chandana-ns
-    labels:
-      app: flower-app
+  name: flower-pod
+  namespace: chandana-ns
+  labels:
+    app: flower-app
 spec:
   containers:
     - name: flower-container
