@@ -1,5 +1,5 @@
 appVersion: v1
-kind: pod
+kind: Pod
 metadata: 
   - name: flower-pod
     namespace: chandana-ns
