@@ -1,0 +1,13 @@
+appVersion: v1
+kind: pod
+metadata: 
+  - name: flower-pod
+    namespace: chandana-ns
+    labels:
+      app: flower-app
+spec:
+  containers:
+    - name: flower-container
+      image: thanusri22/flower:v1.1.0
+      ports:
+        - containerPort: 3015
