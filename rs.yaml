@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata: 
+  name: ey-cart-rs
+  namespace: chandana-ns
+  labels:
+    app: cart
+spec: #behaviour of the replicaset
+  replicas: 3
+  selector: #it is used to select the pod which is going to be managed by this replicaset
+    matchLabels:
+      app: web
+  template: #this is pod definition
+    metadata: 
+      labels: 
+        app: web
+    spec: #it contains container definition
+      containers:
+        - name: ey-cart-container
+          image: muralisocial123/ey-cart:v1.1.0
+          ports:
+            - containerPort: 3000
