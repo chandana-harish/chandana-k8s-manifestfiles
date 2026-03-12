@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: ey-apps-new
+  namespace: chandana-ns
+  labels:
+    app1: ey
+spec:
+  replicas: 3
+  selector:
+    matchLabels: 
+      app1: ey-new
+  template:
+    metadata: 
+      labels:
+        app1: ey-new
+    spec: 
+      containers: 
+        - name: ey-container
+          image: muralisocial123/ey-cart:v1.1.0
+          ports: 
+            - containerPort: 3000
