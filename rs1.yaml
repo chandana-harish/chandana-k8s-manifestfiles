@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata: 
+  name: retail-apps
+  namespace: chandana-ns
+  labels:
+    app: retail
+spec:
+  replicas: 3
+  selector:
+    matchLabels: 
+      app1: retail-app
+  template:
+    metadata: 
+      labels:
+        app1: retail-app
+    spec: 
+      containers: 
+        - name: retail-container
+          image: thanusri22/retail-app:v1.1.0
+          ports: 
+            - containerPort: 3000
