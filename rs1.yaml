@@ -4,7 +4,7 @@ metadata:
   name: retail-apps
   namespace: chandana-ns
   labels:
-    app: retail
+    app1: retail
 spec:
   replicas: 3
   selector:
