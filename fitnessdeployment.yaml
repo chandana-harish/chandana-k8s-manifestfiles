@@ -22,21 +22,6 @@ spec:
     spec: 
       containers: 
         - name: fitness-containers
-          image: muralisocial123/transaction-app:v1.0.0
+          image: muralisocial123/fitness-app:v1.0.1
           ports: 
             - containerPort: 3000
---- # creating new yaml file
-apiVersion: v1
-kind: Service
-metadata:
-  name: fitness-deployment-svc
-  namespace: chandana-ns
-spec: 
-  selector:  
-    app: fitness1 
-  ports:
-    - port: 3001 #it is a service port number(host)---where we are using this to expose application to internet
-      targetPort: 3000 #container port number
-      protocol: TCP
-  type: NodePort
-  
