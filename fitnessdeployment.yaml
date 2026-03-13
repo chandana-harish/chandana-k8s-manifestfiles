@@ -38,5 +38,5 @@ spec:
     - port: 3001 #it is a service port number(host)---where we are using this to expose application to internet
       targetPort: 3000 #container port number
       protocol: TCP
-  type: ClusterIP
+  type: NodePort
   
