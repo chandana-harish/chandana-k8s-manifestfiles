@@ -24,4 +24,4 @@ spec:
         - name: ey-container
           image: muralisocial123/ey-cart:v1.1.0
           ports: 
-            - containerPort: 3000
+            - containerPort: 3015
