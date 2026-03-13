@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: fitness-Deployment
+  name: fitness-deployment
   namespace: chandana-ns
   labels:
     app: fitness
